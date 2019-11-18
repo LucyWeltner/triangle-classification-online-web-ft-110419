@@ -20,12 +20,12 @@ class Triangle
         return :isosceles
       end 
     else 
-      puts "Not a valid triangle!"
-      begin 
-        raise TriangleError
-      rescue TriangleError => an_error
-        puts an_error.message 
-      end
+      # puts "Not a valid triangle!"
+      # begin 
+      raise TriangleError
+      # rescue TriangleError => an_error
+      #   puts an_error.message 
+      # end
     end 
   end 
   
