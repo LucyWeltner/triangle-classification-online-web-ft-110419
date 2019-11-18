@@ -24,14 +24,14 @@ class Triangle
       begin 
         raise TriangleError
       rescue TriangleError => an_error
-        an_error.message 
+        puts an_error.message 
       end
     end 
   end 
   
   class TriangleError < StandardError 
     def message 
-      puts "Make sure your side lengths are all greater than 0, and the sum of the lengths of any two sides is greater than the length of the third side."
+      "Make sure your side lengths are all greater than 0, and the sum of the lengths of any two sides is greater than the length of the third side."
     end 
   end
 end
