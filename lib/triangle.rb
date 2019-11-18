@@ -1,15 +1,15 @@
 class Triangle
   attr_accessor :length1, :length2, :length3
   
-  def initialization(lengtha, lengthb, lengthc)
+  def initialize(lengtha, lengthb, lengthc)
     @length1 = lengtha 
     @length2 = lengthb 
     @length3 = lengthc
   end 
   
   def kind
-    positive_lengths == @length1 < 0 && @length2 < 0 && @length3 < 0 
-    triangle_inequality == @length1 + @length2 > @length3 && @length3 + @length2 > @length1 && @length1 + @length3 > @length2
+    positive_lengths = @length1 < 0 && @length2 < 0 && @length3 < 0 
+    triangle_inequality = @length1 + @length2 > @length3 && @length3 + @length2 > @length1 && @length1 + @length3 > @length2
     if positive_lengths && triangle_inequality 
       if @length1 == @length2 && @length2 == @length3 
         return :equilateral 
